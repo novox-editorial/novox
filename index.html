@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0B1F3A">
+  <title>NOVOX — The New Voice of École Le Poussin</title>
+  <style>
+    :root {
+      --navy: #0B1F3A;
+      --gold: #D4A72C;
+      --paper: #F7F5EF;
+      --ink: #182230;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background: var(--navy);
+      color: white;
+      padding: 26px 7%;
+      border-bottom: 4px solid var(--gold);
+    }
+    .brand {
+      margin: 0;
+      font-family: Georgia, serif;
+      font-size: clamp(42px, 8vw, 76px);
+      letter-spacing: 5px;
+    }
+    .tagline { color: #E7C66A; margin-top: 5px; }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 22px;
+      padding: 15px 7%;
+      background: white;
+      border-bottom: 1px solid #E4E7EC;
+    }
+    nav a {
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main { max-width: 1050px; margin: 40px auto; padding: 0 22px; }
+    .eyebrow {
+      color: #85630B;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    h2 {
+      color: var(--navy);
+      font: bold clamp(30px, 5vw, 48px) Georgia, serif;
+      margin: 12px 0;
+    }
+    .intro { max-width: 650px; line-height: 1.8; }
+    .notice {
+      margin-top: 28px;
+      padding: 20px;
+      border-left: 4px solid var(--gold);
+      background: white;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 12px 18px;
+      background: var(--navy);
+      color: white;
+      text-decoration: none;
+      border-radius: 3px;
+    }
+    footer {
+      margin-top: 70px;
+      padding: 25px 7%;
+      background: var(--navy);
+      color: white;
+      border-top: 3px solid var(--gold);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="brand">NOVOX</p>
+    <p class="tagline">The New Voice of École Le Poussin</p>
+  </header>
+
+  <nav aria-label="Navigation principale">
+    <a href="#accueil">Accueil</a>
+    <a href="#actualites">Actualités</a>
+    <a href="#opinions">Opinions</a>
+    <a href="#culture">Arts & Culture</a>
+    <a href="#equipe">L'Équipe</a>
+  </nav>
+
+  <main id="accueil">
+    <p class="eyebrow">Le journal de notre école</p>
+    <h2>Une nouvelle voix. Nos histoires.</h2>
+    <p class="intro">
+      Bienvenue sur NOVOX, le journal de l'École Le Poussin.
+      Un espace pour partager les actualités, les idées et les
+      talents de notre communauté scolaire.
+    </p>
+
+    <section class="notice" id="actualites">
+      <p class="eyebrow">Première édition</p>
+      <h3>Nos histoires commencent ici.</h3>
+      <p>
+        Les articles apparaîtront ici après leur rédaction,
+        leur validation et leur publication.
+      </p>
+    </section>
+
+    <section class="notice" id="opinions">
+      <h3>Opinions</h3>
+      <p>Un espace pour les idées et les points de vue de notre communauté.</p>
+    </section>
+
+    <section class="notice" id="culture">
+      <h3>Arts & Culture</h3>
+      <p>Découvrez les talents et les activités réellement présents dans notre école.</p>
+    </section>
+
+    <section class="notice" id="equipe">
+      <h3>L'Équipe NOVOX</h3>
+      <p>Un journal conçu par l'équipe éditoriale de l'École Le Poussin.</p>
+    </section>
+  </main>
+
+  <footer>
+    <strong>NOVOX</strong>
+    <p>The New Voice of École Le Poussin</p>
+  </footer>
+</body>
+</html>
