@@ -1,140 +1,52 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0B1F3A">
-  <title>NOVOX — The New Voice of École Le Poussin</title>
-  <style>
-    :root {
-      --navy: #0B1F3A;
-      --gold: #D4A72C;
-      --paper: #F7F5EF;
-      --ink: #182230;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      background: var(--paper);
-      color: var(--ink);
-      font-family: Arial, sans-serif;
-    }
-    header {
-      background: var(--navy);
-      color: white;
-      padding: 26px 7%;
-      border-bottom: 4px solid var(--gold);
-    }
-    .brand {
-      margin: 0;
-      font-family: Georgia, serif;
-      font-size: clamp(42px, 8vw, 76px);
-      letter-spacing: 5px;
-    }
-    .tagline { color: #E7C66A; margin-top: 5px; }
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 22px;
-      padding: 15px 7%;
-      background: white;
-      border-bottom: 1px solid #E4E7EC;
-    }
-    nav a {
-      color: var(--navy);
-      text-decoration: none;
-      font-weight: bold;
-    }
-    main { max-width: 1050px; margin: 40px auto; padding: 0 22px; }
-    .eyebrow {
-      color: #85630B;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 12px;
-      font-weight: bold;
-    }
-    h2 {
-      color: var(--navy);
-      font: bold clamp(30px, 5vw, 48px) Georgia, serif;
-      margin: 12px 0;
-    }
-    .intro { max-width: 650px; line-height: 1.8; }
-    .notice {
-      margin-top: 28px;
-      padding: 20px;
-      border-left: 4px solid var(--gold);
-      background: white;
-    }
-    .button {
-      display: inline-block;
-      margin-top: 16px;
-      padding: 12px 18px;
-      background: var(--navy);
-      color: white;
-      text-decoration: none;
-      border-radius: 3px;
-    }
-    footer {
-      margin-top: 70px;
-      padding: 25px 7%;
-      background: var(--navy);
-      color: white;
-      border-top: 3px solid var(--gold);
-    }
-  </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#0B1F3A">
+<title>NOVOX — The New Voice of École Le Poussin</title>
+<style>
+:root{--navy:#0B1F3A;--gold:#D4A72C;--softgold:#E7C66A;--paper:#F7F5EF;--ink:#182230;--muted:#6B7280;--line:#E4E7EC;--white:#fff}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,Arial,sans-serif;line-height:1.6}header{background:var(--navy);color:white;padding:24px max(5%,calc((100% - 1180px)/2));border-bottom:4px solid var(--gold)}.brand{font: bold clamp(44px,8vw,76px) Georgia,serif;letter-spacing:5px;margin:0;line-height:1.1}.tagline{color:var(--softgold);margin:8px 0 0}nav{display:flex;gap:20px;flex-wrap:wrap;align-items:center;padding:14px max(5%,calc((100% - 1180px)/2));background:white;border-bottom:1px solid var(--line)}nav a{color:var(--navy);text-decoration:none;font-weight:700}main{max-width:1180px;margin:34px auto;padding:0 22px}.eyebrow{color:#85630B;text-transform:uppercase;letter-spacing:2px;font-size:.75rem;font-weight:800}.hero{padding:20px 0 28px}.hero h1{font:700 clamp(2.1rem,5vw,3.8rem)/1.1 Georgia,serif;color:var(--navy);max-width:850px;margin:12px 0}.intro{max-width:700px;color:#394454}.layout{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(280px,1fr);gap:22px;align-items:start}.panel,.article-card{background:white;border:1px solid var(--line);padding:22px;border-radius:8px;margin-bottom:18px}.panel h2,.section-title{font:700 1.6rem Georgia,serif;color:var(--navy);margin:0 0 12px}.auth-tabs{display:flex;gap:8px;margin-bottom:12px}.auth-tabs button{flex:1}.field{display:block;margin:10px 0 4px;font-size:.9rem;font-weight:700}.input{width:100%;padding:12px;border:1px solid #cbd2dc;border-radius:5px;font:inherit;background:white;color:var(--ink)}button,.button{cursor:pointer;border:0;border-radius:5px;padding:11px 15px;background:var(--navy);color:white;font:inherit;font-weight:700}button.secondary{background:#edf0f4;color:var(--navy);border:1px solid var(--line)}button.gold{background:var(--gold);color:var(--navy)}button:disabled{opacity:.55;cursor:not-allowed}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.status{padding:10px 12px;background:#f2f5f8;border-left:3px solid var(--gold);font-size:.92rem;overflow-wrap:anywhere;margin:12px 0}.muted{color:var(--muted);font-size:.9rem}.article-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.article-card{margin:0}.article-card h3{font:700 1.35rem Georgia,serif;color:var(--navy);margin:8px 0}.article-meta{color:var(--muted);font-size:.82rem}.hidden{display:none!important}footer{margin-top:55px;padding:28px max(5%,calc((100% - 1180px)/2));background:var(--navy);color:white;border-top:3px solid var(--gold)}footer p{color:#d5dce5}.top-right{margin-left:auto}.star{color:var(--gold)}@media(max-width:760px){.layout{grid-template-columns:1fr}.article-list{grid-template-columns:1fr}nav{gap:12px}.top-right{margin-left:0}}
+</style>
 </head>
 <body>
-  <header>
-    <p class="brand">NOVOX</p>
-    <p class="tagline">The New Voice of École Le Poussin</p>
-  </header>
-
-  <nav aria-label="Navigation principale">
-    <a href="#accueil">Accueil</a>
-    <a href="#actualites">Actualités</a>
-    <a href="#opinions">Opinions</a>
-    <a href="#culture">Arts & Culture</a>
-    <a href="#equipe">L'Équipe</a>
-  </nav>
-
-  <main id="accueil">
-    <p class="eyebrow">Le journal de notre école</p>
-    <h2>Une nouvelle voix. Nos histoires.</h2>
-    <p class="intro">
-      Bienvenue sur NOVOX, le journal de l'École Le Poussin.
-      Un espace pour partager les actualités, les idées et les
-      talents de notre communauté scolaire.
-    </p>
-
-    <section class="notice" id="actualites">
-      <p class="eyebrow">Première édition</p>
-      <h3>Nos histoires commencent ici.</h3>
-      <p>
-        Les articles apparaîtront ici après leur rédaction,
-        leur validation et leur publication.
-      </p>
-    </section>
-
-    <section class="notice" id="opinions">
-      <h3>Opinions</h3>
-      <p>Un espace pour les idées et les points de vue de notre communauté.</p>
-    </section>
-
-    <section class="notice" id="culture">
-      <h3>Arts & Culture</h3>
-      <p>Découvrez les talents et les activités réellement présents dans notre école.</p>
-    </section>
-
-    <section class="notice" id="equipe">
-      <h3>L'Équipe NOVOX</h3>
-      <p>Un journal conçu par l'équipe éditoriale de l'École Le Poussin.</p>
-    </section>
-  </main>
-
-  <footer>
-    <strong>NOVOX</strong>
-    <p>The New Voice of École Le Poussin</p>
-  </footer>
-</body>
-</html>
+<header><p class="brand">NOVOX</p><p class="tagline">The New Voice of École Le Poussin</p></header>
+<nav aria-label="Navigation principale"><a href="#accueil">Accueil</a><a href="#actualites">Actualités</a><a href="#opinions">Opinions</a><a href="#culture">Arts & Culture</a><a href="#equipe">L’Équipe</a><a href="#abonnement">Abonnement</a><span class="top-right muted" id="session-label">Non connecté</span></nav>
+<main id="accueil">
+<section class="hero"><p class="eyebrow">Le journal de notre école</p><h1>Une nouvelle voix. Nos histoires.</h1><p class="intro">Bienvenue sur NOVOX, le journal de l’École Le Poussin. Un espace pour partager les actualités, les idées et les talents de notre communauté scolaire.</p></section>
+<div class="layout"><div>
+<section id="actualites"><h2 class="section-title">À la une</h2><div id="article-status" class="status">Les articles publiés seront chargés ici lorsque Supabase sera configuré.</div><div id="articles" class="article-list"></div></section>
+<section class="panel" id="opinions"><h2>Opinions</h2><p>Les textes d’opinion soumis par les lecteurs doivent être examinés par l’équipe avant toute publication.</p><p class="muted">Le formulaire de soumission sera ajouté dans une prochaine étape, avec une file de modération privée.</p></section>
+<section class="panel" id="culture"><h2>Arts & Culture</h2><p>Un espace pour présenter les talents et les activités de la communauté scolaire, avec des contenus vérifiés par l’équipe.</p></section>
+<section class="panel" id="equipe"><h2>L’Équipe NOVOX</h2><p>Un journal conçu par l’équipe éditoriale de l’École Le Poussin.</p></section>
+</div><aside>
+<section class="panel"><h2>Ton espace NOVOX</h2><p class="muted">Crée un compte lecteur ou connecte-toi. Les nouveaux comptes reçoivent le rôle lecteur par défaut.</p><div class="auth-tabs"><button id="tab-login" type="button" class="secondary">Connexion</button><button id="tab-signup" type="button" class="secondary">Créer un compte</button></div>
+<form id="auth-form"><div id="name-wrap" class="hidden"><label class="field" for="display-name">Nom d’affichage</label><input class="input" id="display-name" autocomplete="nickname" maxlength="80" placeholder="Ton nom public"></div><label class="field" for="email">Adresse électronique</label><input class="input" id="email" type="email" autocomplete="email" required maxlength="254"><label class="field" for="password">Mot de passe</label><input class="input" id="password" type="password" autocomplete="current-password" required minlength="8"><div class="actions"><button id="auth-submit" type="submit">Se connecter</button><button id="signout" type="button" class="secondary hidden">Se déconnecter</button></div></form><div id="auth-status" class="status" role="status" aria-live="polite">Configure d’abord l’URL et la clé publique dans supabase-config.js.</div><div id="profile-area" class="hidden"><p id="profile-label"></p><label class="field" for="new-display-name">Modifier le nom d’affichage</label><input class="input" id="new-display-name" maxlength="80"><div class="actions"><button id="save-profile" type="button">Enregistrer le nom</button></div></div></section>
+<section class="panel" id="abonnement"><h2>Recevoir les nouvelles</h2><p class="muted">Les inscriptions seront enregistrées en attente de confirmation. Aucun courriel n’est envoyé tant que le service correspondant n’est pas configuré.</p><form id="subscribe-form"><label class="field" for="subscribe-email">Adresse électronique</label><input class="input" id="subscribe-email" type="email" required maxlength="254"><div class="actions"><button type="submit" class="gold">M’inscrire</button></div></form><div id="subscribe-status" class="status" role="status" aria-live="polite">L’abonnement sera disponible après configuration de Supabase.</div></section>
+</aside></div></main>
+<footer><strong>NOVOX</strong><p>The New Voice of École Le Poussin</p><small>© NOVOX — École Le Poussin</small></footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script><script src="./supabase-config.js"></script>
+<script>
+(() => {
+ const byId = id => document.getElementById(id);
+ const url = window.NOVOX_SUPABASE_URL;
+ const key = window.NOVOX_SUPABASE_PUBLISHABLE_KEY;
+ let client = null, mode = 'login', currentUser = null;
+ const setStatus = (id, msg) => { byId(id).textContent = msg; };
+ const configured = url && key && !url.includes('COLLE_ICI') && !key.includes('COLLE_ICI') && /^https:\/\//.test(url);
+ function setMode(next) { mode = next; byId('name-wrap').classList.toggle('hidden', mode !== 'signup'); byId('auth-submit').textContent = mode === 'signup' ? 'Créer mon compte' : 'Se connecter'; byId('tab-login').classList.toggle('gold', mode === 'login'); byId('tab-signup').classList.toggle('gold', mode === 'signup'); }
+ byId('tab-login').addEventListener('click', () => setMode('login'));
+ byId('tab-signup').addEventListener('click', () => setMode('signup'));
+ function showSession(user, profile) { currentUser = user || null; byId('session-label').textContent = user ? (profile?.display_name || user.email || 'Connecté') : 'Non connecté'; byId('signout').classList.toggle('hidden', !user); byId('profile-area').classList.toggle('hidden', !user); if(user){byId('profile-label').textContent = `Connecté : ${user.email || ''} · rôle : ${profile?.role || 'reader'}`; byId('new-display-name').value = profile?.display_name || ''; byId('auth-form').classList.add('hidden'); byId('auth-status').classList.add('hidden');} else {byId('auth-form').classList.remove('hidden');byId('auth-status').classList.remove('hidden');byId('profile-label').textContent='';}}
+ async function loadProfile(user) { let {data,error}=await client.from('profiles').select('id,display_name,avatar_url,role').eq('id',user.id).maybeSingle(); if(error){setStatus('auth-status','Connecté, mais le profil n’a pas pu être chargé. Vérifie les politiques RLS.');} showSession(user,data); }
+ async function loadArticles() { const {data,error}=await client.from('articles').select('id,title,slug,summary,content,category,published_at,created_at').eq('status','published').order('published_at',{ascending:false}).limit(12); if(error){setStatus('article-status','Impossible de charger les articles. Vérifie les politiques de lecture de public.articles.');return;} const container=byId('articles');container.innerHTML='';if(!data?.length){setStatus('article-status','Aucun article publié pour le moment.');return;}setStatus('article-status','Derniers articles publiés');for(const a of data){const card=document.createElement('article');card.className='article-card';const cat=document.createElement('p');cat.className='eyebrow';cat.textContent=a.category||'Actualités';const title=document.createElement('h3');title.textContent=a.title;const summary=document.createElement('p');summary.textContent=a.summary||'';const meta=document.createElement('p');meta.className='article-meta';meta.textContent=a.published_at?new Date(a.published_at).toLocaleDateString('fr-FR'):'';card.append(cat,title,summary,meta);container.append(card);}}
+ if(!configured || !window.supabase?.createClient){setStatus('auth-status','Connexion non configurée : ajoute l’URL du projet et la clé publique dans supabase-config.js.');setStatus('article-status','Supabase n’est pas encore configuré. Les articles apparaîtront ici après connexion.');setStatus('subscribe-status','Configure Supabase pour activer les inscriptions.');return;}
+ client=window.supabase.createClient(url,key);
+ byId('auth-form').addEventListener('submit',async e=>{e.preventDefault();const email=byId('email').value.trim();const password=byId('password').value;const button=byId('auth-submit');button.disabled=true;setStatus('auth-status',mode==='signup'?'Création du compte…':'Connexion…');try{if(mode==='signup'){const display_name=byId('display-name').value.trim();const {data,error}=await client.auth.signUp({email,password,options:{data:{display_name}}});if(error)throw error;if(data.session){await loadProfile(data.user);setStatus('auth-status','Compte créé et connecté.');}else{setStatus('auth-status','Compte créé. Si la confirmation par e-mail est activée, vérifie ta boîte de réception avant de te connecter.');}}else{const {data,error}=await client.auth.signInWithPassword({email,password});if(error)throw error;await loadProfile(data.user);await loadArticles();setStatus('auth-status','Connexion réussie.');}}catch(err){setStatus('auth-status',err.message||'Une erreur est survenue.');}finally{button.disabled=false;}});
+ byId('signout').addEventListener('click',async()=>{const {error}=await client.auth.signOut();if(error){setStatus('auth-status',error.message);return;}showSession(null,null);setMode('login');setStatus('auth-status','Tu es déconnecté.');});
+ byId('save-profile').addEventListener('click',async()=>{if(!currentUser)return;const display_name=byId('new-display-name').value.trim();const {error}=await client.from('profiles').update({display_name}).eq('id',currentUser.id);if(error){setStatus('auth-status','Impossible de modifier le nom : '+error.message);return;}await loadProfile(currentUser);setStatus('auth-status','Nom d’affichage enregistré.');});
+ byId('subscribe-form').addEventListener('submit',async e=>{e.preventDefault();const email=byId('subscribe-email').value.trim();const btn=e.submitter; if(btn)btn.disabled=true;try{const {error}=await client.from('subscriptions').insert({email,active:false});if(error){if(error.code==='23505')throw new Error('Cette adresse est déjà inscrite ou en attente de confirmation.');throw error;}setStatus('subscribe-status','Demande enregistrée en attente de confirmation. Aucun courriel n’a été envoyé.');byId('subscribe-form').reset();}catch(err){setStatus('subscribe-status',err.message||'Inscription impossible.');}finally{if(btn)btn.disabled=false;}});
+ client.auth.onAuthStateChange(async(_event,session)=>{if(session?.user){await loadProfile(session.user);}else{showSession(null,null);}});
+ (async()=>{const {data:{session}}=await client.auth.getSession();if(session?.user)await loadProfile(session.user);await loadArticles();setStatus('subscribe-status','Tu peux demander une inscription ; elle restera en attente jusqu’à la mise en place de la confirmation.');})();
+ setMode('login');
+})();
+</script>
+</body></html>
